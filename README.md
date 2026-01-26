@@ -22,3 +22,20 @@ Sqlite gives you error messages on the terminal if there are syntax errors in yo
 
 If you get stuck in sqlite and are unable to use `.exit` you can use `ctrl+D` or `cmd+D` to escape.
 
+
+## staff.db
+```
+sqlite3 staff.db
+CREATE TABLE Branch(branchID integer PRIMARY KEY, address text);
+CREATE TABLE Staff(staffID integer PRIMARY KEY, name text, branchID integer,
+                   FOREIGN KEY (branchID) REFERENCES Branch(branchID));
+INSERT INTO Branch VALUES ( 101, '2 Woodhouse Lane' );
+INSERT INTO Staff VALUES ( 402, 'John Smith', 101 );
+.exit
+```
+
+```
+sqlite3 staff.db
+.dump
+.exit
+```
