@@ -9,9 +9,6 @@
 -- 2. Load this script: .read task1.sql
 -- 3. Exit SQLite: .exit
 
-
--- write your sql code here
-
 -- Retrieve all data from the countries table
 SELECT * from Countries;
 
