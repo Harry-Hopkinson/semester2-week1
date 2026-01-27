@@ -41,3 +41,19 @@ ORDER BY GDPPerCapita DESC LIMIT 3;
 SELECT Country from Countries
 WHERE InfantMortalityPer1000 > 50
 ORDER BY LiteracyPercent DESC LIMIT 1;
+
+-- 5 countries with the lowest phones per 1000
+-- With a GDP above 10000
+SELECT Country from Countries
+WHERE GDPPerCapita > 10000
+ORDER BY PhonesPer1000 ASC LIMIT 5;
+
+-- Richest landlocked country in South America
+SELECT Country from Countries
+WHERE Continent = 'South America' AND
+CoastlineRatio = 0
+ORDER BY GDPPerCapita DESC LIMIT 1;
+
+-- Last 10 countries alphabetically
+SELECT Country from Countries
+ORDER BY Country DESC LIMIT 10;
