@@ -8,4 +8,4 @@
 -- 1. Open SQLite in terminal: sqlite3 countries.db
 -- 2. Load this script: .read example.sql
 -- 3. Exit SQLite: .exit
-
+SELECT 'Hello, World!' AS Greeting;
