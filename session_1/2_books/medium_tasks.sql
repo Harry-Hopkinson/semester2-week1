@@ -7,7 +7,7 @@
 -- 2. Load this script: .read tasks.sql
 -- 3. Exit SQLite: .exit
 
-
--- write your sql code here
-
-SELECT * from books;
+-- Show Science Fiction books with a rating higher than 4.0
+SELECT Title FROM Books
+WHERE Genre = 'Science Fiction'
+AND Rating > 4.0;
