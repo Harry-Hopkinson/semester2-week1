@@ -10,25 +10,25 @@
 -- 3. Exit SQLite: .exit
 
 -- Find the top 10 most populous countries
-SELECT Country FROM countries ORDER BY
+SELECT Country FROM Countries ORDER BY
 Population DESC LIMIT 10;
 
 -- Smallest 5 countries by area
-SELECT Country FROM countries ORDER BY
+SELECT Country FROM Countries ORDER BY
 AreaSqMi ASC LIMIT 5;
 
 -- Largest country in Europe
-SELECT Country FROM countries
+SELECT Country FROM Countries
 WHERE Continent = 'Europe'
 ORDER BY Population DESC LIMIT 1;
 
 -- Smallest 3 countries in Africa
-SELECT Country FROM countries
+SELECT Country FROM Countries
 WHERE Continent = 'Africa'
 ORDER BY AreaSqMi ASC LIMIT 3;
 
 -- 5 countries with the lowest literacy rate
-SELECT Country FROM countries
+SELECT Country FROM Countries
 ORDER BY LiteracyPercent ASC LIMIT 5;
 
 -- 3 richest (by GDP) countries starting with 'C'
